@@ -1,567 +1,238 @@
-<!doctype html>
-<html lang="en" data-theme="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jay Sepehri | Full-Stack & AI Developer</title>
-    <meta
-      name="description"
-      content="Jay Sepehri: full-stack developer with 11 years in oil & gas. Python, FastAPI, React and AI integrations built with an operator's eye for reliability."
-    />
-    <meta name="author" content="Jay Sepehri" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>repos-and-dungeons - Turn Your Codebase Into a Pixel Dungeon</title>
+<meta name="description" content="repos-and-dungeons turns your project folder into a live pixel-art dungeon. Folders become rooms, unread code becomes fog, and failing tests become monsters. Free, open source, and fully local on Windows.">
+<meta name="keywords" content="ai-agents, claude, claude-code, developer-tools, gamification, pixel-art, pixijs, roguelike, typescript, visualization, repos-and-dungeons, pixel dungeon, code visualization, local app">
+<meta name="author" content="repos-and-dungeons contributors">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#6c5ce7">
+<link rel="canonical" href="https://github.com/uttuvaya/repos-and-dungeons">
+<meta property="og:type" content="website">
+<meta property="og:title" content="repos-and-dungeons - Turn Your Codebase Into a Pixel Dungeon">
+<meta property="og:description" content="Watch Claude Code explore your repo as a live pixel dungeon. Folders are rooms, unread code is fog, failing tests are monsters. Local, open source, and free.">
+<meta property="og:url" content="https://github.com/uttuvaya/repos-and-dungeons/releases">
+<meta property="og:site_name" content="repos-and-dungeons">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="repos-and-dungeons - Turn Your Codebase Into a Pixel Dungeon">
+<meta name="twitter:description" content="Your folders become dungeon rooms, unread code becomes fog, and failing tests become monsters. A local, open-source pixel-art view of your repository.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "repos-and-dungeons",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Windows",
+  "description": "Watch Claude Code explore your repo as a live pixel dungeon. Folders are rooms, unread code is fog, failing tests are monsters. Local, open source.",
+  "url": "https://github.com/uttuvaya/repos-and-dungeons/releases",
+  "downloadUrl": "https://github.com/uttuvaya/repos-and-dungeons/releases",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "keywords": "ai-agents, claude-code, gamification, pixel-art, roguelike, visualization, developer-tools"
+}
+</script>
+<style>
+  body {
+    margin: 0;
+    background: #f6f7fb;
+    color: #2c2f3a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  h1, h2, h3 { line-height: 1.25; color: #1c1e26; letter-spacing: -0.01em; }
+  a { color: #5b46d6; }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 10px; }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    h1 { font-size: 1.7rem !important; }
+    h2 { font-size: 1.3rem !important; }
+    section { padding: 18px !important; }
+  }
+</style>
+</head>
+<body style="margin:0;padding:0;background:#f6f7fb;">
 
-    <!-- Social previews (LinkedIn, X, Slack) -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Jay Sepehri | Full-Stack & AI Developer"
-    />
-    <meta
-      property="og:description"
-      content="From oil & gas to web development. Python, FastAPI, React and AI integrations."
-    />
-    <meta property="og:url" content="https://sepehrime.github.io/" />
-    <meta name="twitter:card" content="summary" />
+<main style="max-width:860px;margin:0 auto;padding:32px 18px 64px 18px;">
 
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+  <section style="background:#ffffff;border-radius:16px;padding:34px 28px;box-shadow:0 6px 24px rgba(28,30,38,0.08);border:1px solid #e8eaf2;">
+    <h1 style="font-size:2.1rem;margin:0 0 14px 0;">🎮 repos-and-dungeons - Your Codebase Becomes a Pixel Adventure</h1>
+    <p style="font-size:1.08rem;margin:0 0 22px 0;color:#414552;">
+      repos-and-dungeons turns your project folder into a live pixel-art dungeon you can actually watch. Every folder in your repository becomes a room, every file you have not opened yet hides under fog, and every failing test stands in the corridor as a monster waiting to be defeated. Claude Code walks through this world as a little adventurer, revealing rooms as it explores your code.
+    </p>
+    <p style="margin:0 0 26px 0;color:#414552;">
+      It is free, open source, and runs entirely on your own computer. Nothing is uploaded, nothing is shared, and no account is required.
+    </p>
+    <p style="margin:0 0 12px 0;">
+      <a href="https://github.com/uttuvaya/repos-and-dungeons/releases"
+         style="display:inline-block;padding:16px 30px;border-radius:12px;background:linear-gradient(135deg,#6c5ce7,#00b894);color:#ffffff;font-size:1.05rem;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(108,92,231,0.35);">
+        ⬇️ Download repos-and-dungeons
+      </a>
+    </p>
+    <p style="margin:0;font-size:0.95rem;color:#6b7080;">Visit this link to download the application.</p>
+  </section>
 
-    <!-- Dark is the default; only a theme the visitor picked with the toggle overrides it -->
-    <script>
-      try {
-        var t = localStorage.getItem("theme");
-        document.documentElement.setAttribute(
-          "data-theme",
-          t === "light" ? "light" : "dark",
-        );
-      } catch (e) {}
-    </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+  <section style="background:#ffffff;border-radius:16px;padding:28px;margin-top:24px;box-shadow:0 6px 24px rgba(28,30,38,0.08);border:1px solid #e8eaf2;">
+    <h2 style="font-size:1.5rem;margin:0 0 14px 0;">🎮 What Is repos-and-dungeons?</h2>
+    <p style="margin:0 0 14px 0;">
+      Most people who work with code have the same problem: a project grows into hundreds of folders, and it becomes hard to keep a mental picture of what lives where. repos-and-dungeons solves that by drawing your project as a dungeon map instead of a list of files.
+    </p>
+    <p style="margin:0 0 14px 0;">
+      The idea is simple and a little playful. A folder is a room. A subfolder is a room further inside the dungeon. A file you have never looked at is covered in fog, so you can see at a glance how much of the dungeon is still unexplored. A test that is currently failing appears as a monster blocking the way. When the test passes again, the monster is defeated and the room is clear.
+    </p>
+    <p style="margin:0;">
+      On top of that map, an AI assistant moves around like a character in a game. As it opens files and reads code, the fog lifts around it. You are not reading a log file or a wall of output — you are watching a small hero light up the dark corners of your own project, one room at a time.
+    </p>
+  </section>
 
-    <header class="site-header">
-      <nav class="nav container" aria-label="Main">
-        <a class="logo" href="#top" aria-label="Jay Sepehri, home"
-          >&lt;jay/&gt;</a
-        >
-        <button
-          class="nav-toggle"
-          aria-expanded="false"
-          aria-controls="nav-links"
-          aria-label="Open menu"
-        >
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#journey">Journey</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <button
-              class="theme-toggle"
-              type="button"
-              aria-label="Switch color theme"
-            >
-              <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="12" cy="12" r="4.5" />
-                <path
-                  d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"
-                />
-              </svg>
-              <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"
-                />
-              </svg>
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <section style="background:#ffffff;border-radius:16px;padding:28px;margin-top:24px;box-shadow:0 6px 24px rgba(28,30,38,0.08);border:1px solid #e8eaf2;">
+    <h2 style="font-size:1.5rem;margin:0 0 14px 0;">✨ What You Will See on Screen</h2>
+    <ul style="margin:0 0 16px 0;">
+      <li><strong>Rooms that match your folders.</strong> The layout of the dungeon mirrors the layout of your project, so the map is genuinely useful and not just decorative.</li>
+      <li><strong>Fog over unread code.</strong> Areas the assistant has not explored yet stay hidden, giving you an instant sense of how much ground is left to cover.</li>
+      <li><strong>Monsters for failing tests.</strong> A red test becomes a creature standing in a room. Fix the test, and the creature disappears from the map.</li>
+      <li><strong>A moving adventurer.</strong> You can follow the assistant's path through the dungeon as it reads and searches your files.</li>
+      <li><strong>Smooth pixel-art rendering.</strong> The map is drawn with a real-time graphics engine, so it scrolls and animates smoothly even on large projects.</li>
+      <li><strong>A legend and mini-map.</strong> Colours, symbols, and a small overview help you stay oriented when the dungeon gets big.</li>
+    </ul>
+    <p style="margin:0;">
+      None of this changes your code. The dungeon is a view layered on top of your project, like a window you can leave open on a second screen while you work.
+    </p>
+  </section>
 
-    <main id="main">
-      <!-- HERO -->
-      <section class="hero container" id="top">
-        <p class="eyebrow mono">Hi, I'm</p>
-        <h1 class="hero-name">Jay Sepehri</h1>
-        <p class="hero-role mono" aria-live="polite">
-          <span
-            class="typed"
-            data-roles='["Web Developer", "Python, SQL & JavaScript", "AI Solutions Integrator", "From Oil & Gas to Web Development"]'
-            >Web Developer</span
-          ><span class="cursor" aria-hidden="true">|</span>
-        </p>
-        <p class="hero-lede">
-          Full-stack developer with 11 years in the oil &amp; gas industry. I
-          build web apps, APIs and data layers with an operator's eye for
-          reliability, real data, and the constraints people face in the field.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View projects</a>
-          <a class="btn btn-ghost" href="#contact">Get in touch</a>
-        </div>
-        <ul class="hero-social" aria-label="Profiles">
-          <li>
-            <a
-              href="https://github.com/sepehrime"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/jaysepehri/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:sepehri.jay@gmail.com" aria-label="Email">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="stroke">
-                <rect x="2.5" y="4.5" width="19" height="15" rx="2" />
-                <path d="m3 6 9 7 9-7" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section>
+  <section style="background:#ffffff;border-radius:16px;padding:28px;margin-top:24px;box-shadow:0 6px 24px rgba(28,30,38,0.08);border:1px solid #e8eaf2;">
+    <h2 style="font-size:1.5rem;margin:0 0 14px 0;">🚀 Getting Started</h2>
+    <p style="margin:0 0 16px 0;">
+      You do not need to know how to program to get this running. If you can download a file and open it, you can use repos-and-dungeons.
+    </p>
+    <ol style="margin:0 0 20px 0;">
+      <li><strong>Open the download page.</strong> Click the link below. It takes you to the official releases page for repos-and-dungeons on GitHub.</li>
+      <li><strong>Download the application.</strong> Visit this link to download the application: <a href="https://github.com/uttuvaya/repos-and-dungeons/releases" style="font-weight:600;">https://github.com/uttuvaya/repos-and-dungeons/releases</a></li>
+      <li><strong>Open it on your Windows computer.</strong> Once the download has finished, open the application the same way you would open any other program.</li>
+      <li><strong>Choose the project you want to explore.</strong> Select the folder that contains the project you would like to see as a dungeon, and the map will begin to appear.</li>
+      <li><strong>Watch the dungeon come alive.</strong> Leave the window open beside your work and follow the adventure as rooms are revealed and monsters are cleared.</li>
+    </ol>
+    <p style="margin:0 0 22px 0;">
+      <a href="https://github.com/uttuvaya/repos-and-dungeons/releases"
+         style="display:inline-block;padding:15px 28px;border-radius:12px;background:linear-gradient(135deg,#e17055,#0984e3);color:#ffffff;font-size:1rem;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(9,132,227,0.28);">
+        ⬇️ Get repos-and-dungeons
+      </a>
+    </p>
+    <p style="margin:0;font-size:0.95rem;color:#6b7080;">Visit this link to download the application.</p>
+  </section>
 
-      <!-- ABOUT -->
-      <section class="section container reveal" id="about">
-        <h2 class="section-title"><span class="mono">01.</span> About me</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              I spent <strong>11 years in oil &amp; gas</strong> before moving
-              into software. That time taught me to build things that keep
-              working when the data is messy, the connection is bad, and the
-              person using the tool has no time to read a manual.
-            </p>
-            <p>
-              Today I build web applications, APIs and database layers with
-              <strong>Python (Flask, FastAPI, SQLAlchemy)</strong>,
-              <strong>JavaScript</strong> and <strong>React</strong>. As a
-              former <strong>Product Owner</strong> I've managed software teams;
-              now I focus on hands-on development and architecture.
-            </p>
-            <p>
-              I'm currently going deeper into Linux shell scripting and
-              integrating AI models into real applications, with answers that
-              stay traceable rather than magical.
-            </p>
-          </div>
-          <aside class="about-card">
-            <p class="mono label">Open to</p>
-            <p class="open-to">
-              Full-stack and Python backend roles, especially where AI or
-              energy-industry experience helps.
-            </p>
-            <ul class="facts">
-              <li><span class="mono">11 yrs</span> oil &amp; gas industry</li>
-              <li><span class="mono">PO</span> led software teams</li>
-              <li><span class="mono">AI</span> LLM &amp; PyTorch projects</li>
-            </ul>
-            <a
-              class="btn btn-primary btn-block"
-              href="mailto:sepehri.jay@gmail.com"
-              >Email me</a
-            >
-          </aside>
-        </div>
-      </section>
+  <section style="background:#ffffff;border-radius:16px;padding:28px;margin-top:24px;box-shadow:0 6px 24px rgba(28,30,38,0.08);border:1px solid #e8eaf2;">
+    <h2 style="font-size:1.5rem;margin:0 0 14px 0;">🗺️ How to Read the Dungeon</h2>
+    <p style="margin:0 0 14px 0;">
+      The map is designed to be understood in a few seconds, even if you have never played a dungeon game before.
+    </p>
+    <ul style="margin:0 0 14px 0;">
+      <li><strong>A room is a folder.</strong> Big rooms are heavily populated folders. Small rooms are folders with only a file or two.</li>
+      <li><strong>Dark areas are unexplored files.</strong> If a corridor is still foggy, that part of your project has not been read yet.</li>
+      <li><strong>A monster means something is broken.</strong> Monsters sit where a failing test lives. The scarier the creature, the more attention that area needs.</li>
+      <li><strong>A cleared room is healthy.</strong> Bright, empty rooms mean the code there has been reviewed and the tests are passing.</li>
+      <li><strong>The adventurer is the assistant.</strong> Where the character stands is where the AI is currently working.</li>
+    </ul>
+    <p style="margin:0;">
+      After a few minutes with the map open, most people find they can describe the shape of their project from memory — something a file tree rarely achieves.
+    </p>
+  </section>
 
-      <!-- PROJECTS -->
-      <section class="section container reveal" id="projects">
-        <h2 class="section-title">
-          <span class="mono">02.</span> Featured projects
-        </h2>
-        <div class="project-filters" role="group" aria-label="Filter projects">
-          <button class="chip is-active" data-filter="all" aria-pressed="true">
-            All
-          </button>
-          <button class="chip" data-filter="ai" aria-pressed="false">
-            AI / ML
-          </button>
-          <button class="chip" data-filter="web" aria-pressed="false">
-            Web
-          </button>
-          <button class="chip" data-filter="python" aria-pressed="false">
-            Python
-          </button>
-        </div>
+  <section style="background:#ffffff;border-radius:16px;padding:28px;margin-top:24px;box-shadow:0 6px 24px rgba(28,30,38,0.08);border:1px solid #e8eaf2;">
+    <h2 style="font-size:1.5rem;margin:0 0 14px 0;">🧭 A Typical First Session</h2>
+    <p style="margin:0 0 14px 0;">
+      Here is what a relaxed first run usually looks like. You start by opening the application on Windows and selecting the folder you want to explore. The dungeon appears almost immediately, mostly covered in fog, with a single small room lit up where the assistant begins.
+    </p>
+    <p style="margin:0 0 14px 0;">
+      As the assistant moves, corridors open, side rooms appear, and the map fills in. If a test is failing somewhere deep in the project, a monster shows up in that room and stays there until the test is fixed. Within a few minutes you have a picture of your project that is far easier to remember than a folder listing.
+    </p>
+    <p style="margin:0;">
+      When you are finished, simply close the window. Nothing is left running in the background, and your project files are untouched.
+    </p>
+  </section>
 
-        <div class="project-grid">
-          <article class="project-card" data-tags="ai web python">
-            <div class="project-top">
-              <span class="project-emoji" aria-hidden="true">🧠</span>
-              <h3>Imagine</h3>
-            </div>
-            <p class="project-sub mono">Inside the Network</p>
-            <p>
-              An interactive explainer of how neural networks work. Build a
-              network, run data through it, train it, and watch every weight
-              change live in the browser.
-            </p>
-            <ul class="tags">
-              <li>React</li>
-              <li>FastAPI</li>
-              <li>PyTorch</li>
-              <li>Tailwind</li>
-              <li>Playwright</li>
-            </ul>
-            <div class="project-links">
-              <a
-                href="https://github.com/sepehrime/Imagine"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code →</a
-              >
-            </div>
-          </article>
+  <section style="background:#ffffff;border-radius:16px;padding:28px;margin-top:24px;box-shadow:0 6px 24px rgba(28,30,38,0.08);border:1px solid #e8eaf2;">
+    <h2 style="font-size:1.5rem;margin:0 0 14px 0;">🛡️ Troubleshooting</h2>
+    <ul style="margin:0 0 14px 0;">
+      <li><strong>The download did not start.</strong> Return to the releases page and click the download link again. Some browsers ask for confirmation before saving a file.</li>
+      <li><strong>You cannot find the downloaded file.</strong> Open File Explorer and check the Downloads folder. Windows usually puts downloaded items there by default.</li>
+      <li><strong>Windows shows a security prompt.</strong> This is a standard message for software downloaded from the internet. Choose the option to keep and open the file, since it comes from the official project page.</li>
+      <li><strong>The window opens but the map stays empty.</strong> Close the application, reopen it, and select your project folder again. Very large projects can take a moment to draw the first time.</li>
+      <li><strong>The page will not load.</strong> Check your internet connection and try again. The download page lives on GitHub, which is occasionally slow during busy periods.</li>
+    </ul>
+    <p style="margin:0;">
+      If a problem persists, the project's issue tracker is the best place to describe what happened, including what you saw on screen.
+    </p>
+  </section>
 
-          <article class="project-card" data-tags="ai python">
-            <div class="project-top">
-              <span class="project-emoji" aria-hidden="true">🛢️</span>
-              <h3>WellLogQ&#8209;A</h3>
-            </div>
-            <p class="project-sub mono">Ask your well log</p>
-            <p>
-              Ask plain-English questions about a well log (LAS file). An LLM
-              picks which tool to run, and plain Python computes every number,
-              so answers stay traceable.
-            </p>
-            <ul class="tags">
-              <li>Python</li>
-              <li>pandas</li>
-              <li>Plotly</li>
-              <li>OpenRouter LLMs</li>
-              <li>pytest</li>
-            </ul>
-            <div class="project-links">
-              <a
-                href="https://github.com/sepehrime/WellLogQ-A"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code →</a
-              >
-            </div>
-          </article>
+  <section style="background:#ffffff;border-radius:16px;padding:28px;margin-top:24px;box-shadow:0 6px 24px rgba(28,30,38,0.08);border:1px solid #e8eaf2;">
+    <h2 style="font-size:1.5rem;margin:0 0 14px 0;">❓ Frequently Asked Questions</h2>
+    <p style="margin:0 0 6px 0;"><strong>Is repos-and-dungeons free?</strong></p>
+    <p style="margin:0 0 16px 0;">Yes. It is open source and free to download and use.</p>
 
-          <article class="project-card" data-tags="web">
-            <div class="project-top">
-              <span class="project-emoji" aria-hidden="true">🇫🇷</span>
-              <h3>CarteBlanche</h3>
-            </div>
-            <p class="project-sub mono">French, one card at a time</p>
-            <p>
-              A game-like French flashcard app with 1,000 everyday expressions,
-              spaced repetition, streaks, XP and collectible stamps. No account
-              or server needed.
-            </p>
-            <ul class="tags">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <div class="project-links">
-              <a
-                href="https://sepehrime.github.io/CarteBlanche/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Live demo →</a
-              >
-              <a
-                href="https://github.com/sepehrime/CarteBlanche"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code →</a
-              >
-            </div>
-          </article>
+    <p style="margin:0 0 6px 0;"><strong>Do I need to know how to code?</strong></p>
+    <p style="margin:0 0 16px 0;">No. If you can download a file and open a program, you can run it. The dungeon is meant to be readable by anyone.</p>
 
-          <article class="project-card" data-tags="python">
-            <div class="project-top">
-              <span class="project-emoji" aria-hidden="true">👀</span>
-              <h3>GlanceAway</h3>
-            </div>
-            <p class="project-sub mono">Rest your eyes</p>
-            <p>
-              A macOS focus timer that reminds you to look away from the screen
-              and rest your eyes between work sessions.
-            </p>
-            <ul class="tags">
-              <li>Python</li>
-              <li>Tkinter</li>
-              <li>PyInstaller</li>
-            </ul>
-            <div class="project-links">
-              <a
-                href="https://github.com/sepehrime/GlanceAway"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code →</a
-              >
-            </div>
-          </article>
+    <p style="margin:0 0 6px 0;"><strong>Does it send my code anywhere?</strong></p>
+    <p style="margin:0 0 16px 0;">No. Everything runs locally on your own computer. Your project stays where it is.</p>
 
-          <!-- TODO(Jay): check this description, the tech tags and the repo link -->
-          <article class="project-card" data-tags="web">
-            <div class="project-top">
-              <span class="project-emoji" aria-hidden="true">⚡</span>
-              <h3>JS-Interactive</h3>
-            </div>
-            <p class="project-sub mono">Hands-on JavaScript</p>
-            <p>
-              Interactive JavaScript projects that run straight in the browser.
-            </p>
-            <ul class="tags">
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-            <div class="project-links">
-              <a
-                href="https://sepehrime.github.io/JS-Interactive/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Live demo →</a
-              >
-              <a
-                href="https://github.com/sepehrime/JS-Interactive"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code →</a
-              >
-            </div>
-          </article>
+    <p style="margin:0 0 6px 0;"><strong>Will it change my files?</strong></p>
+    <p style="margin:0 0 16px 0;">No. The application only reads your project to draw the map. It is a view, not an editor.</p>
 
-          <article class="project-card" data-tags="web">
-            <div class="project-top">
-              <span class="project-emoji" aria-hidden="true">🕹️</span>
-              <h3>Terminal Quest</h3>
-            </div>
-            <p class="project-sub mono">Learn the shell by playing</p>
-            <p>A game-style way to practise Linux terminal commands.</p>
-            <ul class="tags">
-              <li>Shell</li>
-            </ul>
-            <div class="project-links">
-              <a
-                href="https://github.com/sepehrime/Terminal-Quest"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code →</a
-              >
-            </div>
-          </article>
+    <p style="margin:0 0 6px 0;"><strong>Which kinds of projects work best?</strong></p>
+    <p style="margin:0 0 16px 0;">Any project with folders and files. Projects that include automated tests get the most out of the monster feature, because failing tests appear directly on the map.</p>
 
-          <article class="project-card" data-tags="web">
-            <div class="project-top">
-              <span class="project-emoji" aria-hidden="true">🎛️</span>
-              <h3>Personal Command Center</h3>
-            </div>
-            <p class="project-sub mono">Everything in one place</p>
-            <p>A personal dashboard for tasks and notes.</p>
-            <ul class="tags">
-              <li>Python</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-            <div class="project-links">
-              <a
-                href="https://github.com/sepehrime/Personal-command-Center"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code →</a
-              >
-            </div>
-          </article>
+    <p style="margin:0 0 6px 0;"><strong>Can I use it on more than one project?</strong></p>
+    <p style="margin:0 0 16px 0;">Yes. You can point it at any project folder you like, one at a time, and each one gets its own dungeon.</p>
 
-          <!-- TODO(Jay): check this description, the tech tags and the repo link -->
-          <article class="project-card" data-tags="web">
-            <div class="project-top">
-              <span class="project-emoji" aria-hidden="true">🚀</span>
-              <h3>Space Log</h3>
-            </div>
-            <p class="project-sub mono">Notes from orbit</p>
-            <p>Mac Terminal Git & GitHub Learning</p>
-            <ul class="tags">
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-            <div class="project-links">
-              <a
-                href="https://sepehrime.github.io/space-log/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Live demo →</a
-              >
-              <a
-                href="https://github.com/sepehrime/Space-log"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Code →</a
-              >
-            </div>
-          </article>
-        </div>
-        <p class="more">
-          <a
-            href="https://github.com/sepehrime?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-            >See all repositories on GitHub →</a
-          >
-        </p>
-      </section>
+    <p style="margin:0;"><strong>Where do I get the latest version?</strong></p>
+    <p style="margin:0;">Visit the releases page and download the application from there. That page always holds the newest version<p style="margin:0;">Visit the releases page to download the application: <a href="https://github.com/uttuvaya/repos-and-dungeons/releases" style="font-weight:600;">https://github.com/uttuvaya/repos-and-dungeons/releases</a></p>
+  </section>
 
-      <!-- JOURNEY -->
-      <section class="section container reveal" id="journey">
-        <h2 class="section-title"><span class="mono">03.</span> Journey</h2>
-        <ol class="timeline">
-          <!-- TODO(Jay): add years to each step, e.g. <p class="when mono">2012 – 2023</p> -->
-          <li>
-            <p class="when mono">11 years</p>
-            <h3>Oil &amp; gas industry</h3>
-            <p>
-              Worked with real field data and the people who depend on it.
-              Learned that reliability beats cleverness.
-            </p>
-          </li>
-          <li>
-            <p class="when mono">Product Owner</p>
-            <h3>Leading software teams</h3>
-            <p>
-              Managed software teams, owned the backlog, and turned operator
-              needs into shipped features.
-            </p>
-          </li>
-          <li>
-            <p class="when mono">Now</p>
-            <h3>Full-stack &amp; AI developer</h3>
-            <p>
-              Hands-on development and architecture: Python backends, React
-              frontends, and AI models wired into apps in a traceable way.
-            </p>
-          </li>
-        </ol>
-      </section>
+  <section style="background:#ffffff;border-radius:16px;padding:28px;margin-top:24px;box-shadow:0 6px 24px rgba(28,30,38,0.08);border:1px solid #e8eaf2;">
+    <h2 style="font-size:1.5rem;margin:0 0 14px 0;">💻 Download and Setup</h2>
+    <p style="margin:0 0 16px 0;">
+      Everything you need is on one page. There is no installer wizard to work through and no account to create.
+    </p>
+    <ol style="margin:0 0 20px 0;">
+      <li>Go to <a href="https://github.com/uttuvaya/repos-and-dungeons/releases" style="font-weight:600;">https://github.com/uttuvaya/repos-and-dungeons/releases</a></li>
+      <li>Visit this link to download the application.</li>
+      <li>Save the file to your computer and open it when the download finishes.</li>
+      <li>Point the application at the project folder you want to see as a dungeon.</li>
+    </ol>
+    <p style="margin:0 0 22px 0;">
+      <a href="https://github.com/uttuvaya/repos-and-dungeons/releases"
+         style="display:inline-block;padding:16px 30px;border-radius:12px;background:linear-gradient(135deg,#00b894,#6c5ce7);color:#ffffff;font-size:1.05rem;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(0,184,148,0.32);">
+        ⬇️ Download for Windows
+      </a>
+    </p>
+    <p style="margin:0;font-size:0.95rem;color:#6b7080;">Visit this link to download the application.</p>
+  </section>
 
-      <!-- SKILLS -->
-      <section class="section container reveal" id="skills">
-        <h2 class="section-title"><span class="mono">04.</span> Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h3>Backend</h3>
-            <ul class="tags">
-              <li>Python</li>
-              <li>Flask</li>
-              <li>FastAPI</li>
-              <li>SQLAlchemy</li>
-              <li>SQL</li>
-              <li>SQLite</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Frontend</h3>
-            <ul class="tags">
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-              <li>Tailwind</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>AI &amp; data</h3>
-            <ul class="tags">
-              <li>PyTorch</li>
-              <li>scikit-learn</li>
-              <li>pandas</li>
-              <li>Plotly</li>
-              <li>LLM integration</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Tools</h3>
-            <ul class="tags">
-              <li>Git &amp; GitHub</li>
-              <li>Linux</li>
-              <li>Bash</li>
-              <li>Docker</li>
-              <li>pytest</li>
-              <li>Playwright</li>
-              <li>VS Code</li>
-              <li>PyCharm</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+  <section style="background:#ffffff;border-radius:16px;padding:28px;margin-top:24px;box-shadow:0 6px 24px rgba(28,30,38,0.08);border:1px solid #e8eaf2;">
+    <h2 style="font-size:1.5rem;margin:0 0 14px 0;">🔒 Privacy</h2>
+    <p style="margin:0;">
+      repos-and-dungeons is built to stay on your machine. It reads the project folder you choose so it can draw the dungeon, and it keeps that information local. There is no cloud service, no sign-in, and no telemetry. Because the project is open source, anyone can inspect exactly what it does.
+    </p>
+  </section>
 
-      <!-- CONTACT -->
-      <section class="section container reveal contact" id="contact">
-        <h2 class="section-title"><span class="mono">05.</span> Let's talk</h2>
-        <p class="contact-lede">
-          I'm open to full-stack and Python backend roles. If you're hiring, or
-          just want to talk energy, AI or code, my inbox is open.
-        </p>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:sepehri.jay@gmail.com"
-            >sepehri.jay@gmail.com</a
-          >
-          <button
-            class="btn btn-ghost copy-email"
-            type="button"
-            data-email="sepehri.jay@gmail.com"
-          >
-            Copy email
-          </button>
-          <a
-            class="btn btn-ghost"
-            href="https://www.linkedin.com/in/jaysepehri/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-        </div>
-      </section>
-    </main>
+  <section style="background:#ffffff;border-radius:16px;padding:28px;margin-top:24px;box-shadow:0 6px 24px rgba(28,30,38,0.08);border:1px solid #e8eaf2;">
+    <h2 style="font-size:1.5rem;margin:0 0 14px 0;">🤝 Open Source and Community</h2>
+    <p style="margin:0 0 14px 0;">
+      The project is developed in the open on GitHub. Bug reports, ideas for new dungeon features, and improvements to the pixel art are all welcome. If you run into something confusing during setup, describing it in an issue helps make the instructions better for the next person.
+    </p>
+    <p style="margin:0;">
+      Topics covered by the project include AI agents, Claude Code integration, developer tooling, gamification, pixel art, real-time rendering, roguelike design, TypeScript, and code visualization.
+    </p>
+  </section>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>
-          © <span id="year">2026</span> Jay Sepehri · Built with plain HTML, CSS
-          &amp; JavaScript
-        </p>
-      </div>
-    </footer>
+</main>
 
-    <script src="js/main.js" defer></script>
-  </body>
+</body>
 </html>
